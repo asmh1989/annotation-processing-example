@@ -1,4 +1,4 @@
-package com.justsafe.android.core.annotations.internal;
+package com.justsafe.android.core.bean.internal;
 
 public class BindingSuffix {
 

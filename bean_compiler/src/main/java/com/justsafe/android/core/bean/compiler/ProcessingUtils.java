@@ -1,6 +1,6 @@
-package com.justsafe.android.core.annotations.compiler;
+package com.justsafe.android.core.bean.compiler;
 
-import com.justsafe.android.core.annotations.BeanManager;
+import com.justsafe.android.core.bean.annotations.BeanManager;
 
 import java.util.HashSet;
 import java.util.Set;

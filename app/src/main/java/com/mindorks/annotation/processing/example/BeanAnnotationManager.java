@@ -1,8 +1,8 @@
 package com.mindorks.annotation.processing.example;
 
-import com.justsafe.android.core.annotations.BaseBeanManager;
-import com.justsafe.android.core.annotations.BeanManager;
-import com.justsafe.android.core.annotations.internal.BindingSuffix;
+import com.justsafe.android.core.bean.BaseBeanManager;
+import com.justsafe.android.core.bean.annotations.BeanManager;
+import com.justsafe.android.core.bean.internal.BindingSuffix;
 
 /** @author sun */
 @BeanManager

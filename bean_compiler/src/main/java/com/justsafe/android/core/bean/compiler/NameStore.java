@@ -1,6 +1,6 @@
-package com.justsafe.android.core.annotations.compiler;
+package com.justsafe.android.core.bean.compiler;
 
-import com.justsafe.android.core.annotations.internal.BindingSuffix;
+import com.justsafe.android.core.bean.internal.BindingSuffix;
 
 /**
  * 常量

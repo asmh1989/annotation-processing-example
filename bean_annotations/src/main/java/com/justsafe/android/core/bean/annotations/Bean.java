@@ -1,4 +1,4 @@
-package com.justsafe.android.core.annotations;
+package com.justsafe.android.core.bean.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

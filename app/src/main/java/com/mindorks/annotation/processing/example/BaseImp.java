@@ -2,7 +2,7 @@ package com.mindorks.annotation.processing.example;
 
 import android.util.Log;
 
-import com.justsafe.android.core.annotations.BeanImp;
+import com.justsafe.android.core.bean.annotations.BeanImp;
 
 /**
  * @author sun

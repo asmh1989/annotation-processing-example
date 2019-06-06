@@ -1,1 +1,1 @@
-include ':app', ':binder-compiler', ':binder-annotations', ':binder', ':bean_annotations', ':bean_compiler'
+include ':app', ':binder-compiler', ':binder-annotations', ':binder', ':bean_annotations', ':bean_compiler', ':beantest'

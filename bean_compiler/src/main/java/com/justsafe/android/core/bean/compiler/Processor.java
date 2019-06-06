@@ -1,9 +1,9 @@
-package com.justsafe.android.core.annotations.compiler;
+package com.justsafe.android.core.bean.compiler;
 
-import com.justsafe.android.core.annotations.Bean;
-import com.justsafe.android.core.annotations.BeanImp;
-import com.justsafe.android.core.annotations.ImpBean;
-import com.justsafe.android.core.annotations.Keep;
+import com.justsafe.android.core.bean.annotations.Bean;
+import com.justsafe.android.core.bean.annotations.BeanImp;
+import com.justsafe.android.core.bean.ImpBean;
+import com.justsafe.android.core.bean.annotations.Keep;
 import com.squareup.javapoet.ArrayTypeName;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.CodeBlock;

@@ -1,4 +1,4 @@
-package com.justsafe.android.core.annotations;
+package com.justsafe.android.core.bean;
 
 
 import java.lang.reflect.Constructor;

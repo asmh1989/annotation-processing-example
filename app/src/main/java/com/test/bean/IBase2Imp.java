@@ -1,6 +1,6 @@
 package com.test.bean;
 
-import com.justsafe.android.core.annotations.BeanImp;
+import com.justsafe.android.core.bean.annotations.BeanImp;
 
 /** @author sun */
 @BeanImp(

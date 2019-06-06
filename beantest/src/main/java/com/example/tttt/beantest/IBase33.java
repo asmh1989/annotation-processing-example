@@ -1,4 +1,4 @@
-package com.test.bean;
+package com.example.tttt.beantest;
 
 import com.justsafe.android.core.bean.annotations.Bean;
 
@@ -7,7 +7,7 @@ import com.justsafe.android.core.bean.annotations.Bean;
  **/
 
 @Bean
-public interface IBase2 {
+public interface IBase33 {
 
-    void test2();
+    void test3();
 }
