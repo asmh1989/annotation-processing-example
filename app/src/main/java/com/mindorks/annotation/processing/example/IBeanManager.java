@@ -1,6 +1,6 @@
 package com.mindorks.annotation.processing.example;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.util.Map;
 

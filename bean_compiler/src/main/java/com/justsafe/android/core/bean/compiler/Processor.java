@@ -1,5 +1,6 @@
 package com.justsafe.android.core.bean.compiler;
 
+import com.google.auto.service.AutoService;
 import com.justsafe.android.core.bean.annotations.Bean;
 import com.justsafe.android.core.bean.annotations.BeanImp;
 import com.justsafe.android.core.bean.ImpBean;
@@ -30,6 +31,7 @@ import javax.tools.Diagnostic;
  *
  * @author sun
  */
+
 public class Processor extends AbstractProcessor {
 
     private Filer filer;
