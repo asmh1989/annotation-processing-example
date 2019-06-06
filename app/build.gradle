@@ -26,7 +26,11 @@ dependencies {
     //annotation processing
     implementation project(':binder')
     annotationProcessor project(':binder-compiler')
-    
+
+
+    implementation project(':bean_annotations')
+    annotationProcessor project(':bean_compiler')
+
     // tests
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'

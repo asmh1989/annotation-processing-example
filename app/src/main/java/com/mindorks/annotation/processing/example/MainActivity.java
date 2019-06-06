@@ -2,6 +2,7 @@ package com.mindorks.annotation.processing.example;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Binding.bind(this);
+
+        Log.d("SUN", new BeanAnnotationManager().toString());
+
     }
 
     @OnClick(R.id.bt_1)
