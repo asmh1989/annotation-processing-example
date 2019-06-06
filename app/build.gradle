@@ -10,11 +10,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        // add below section
-        javaCompileOptions {
-            annotationProcessorOptions {
-                includeCompileClasspath false
-            }
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
         }
 
     }
@@ -36,8 +34,13 @@ dependencies {
     annotationProcessor project(':binder-compiler')
 
 
+
+    implementation 'com.google.auto.service:auto-service:1.0-rc5'
+    annotationProcessor "com.google.auto.service:auto-service:1.0-rc5"
+
+
     implementation project(':bean_annotations')
-    annotationProcessor project(':bean_compiler')
+//    annotationProcessor project(':bean_compiler')
 
     implementation project(':beantest')
 

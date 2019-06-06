@@ -32,6 +32,7 @@ import javax.tools.Diagnostic;
  * @author sun
  */
 
+@AutoService(Processor.class)
 public class Processor extends AbstractProcessor {
 
     private Filer filer;

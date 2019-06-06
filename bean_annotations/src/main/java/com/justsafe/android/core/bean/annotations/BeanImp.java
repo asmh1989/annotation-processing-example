@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * @author sun
  **/
 @Target(ElementType.TYPE)
-@Retention(RetentionPolicy.CLASS)
+@Retention(RetentionPolicy.RUNTIME)
 public @interface BeanImp {
 
     /**
