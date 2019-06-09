@@ -37,16 +37,18 @@ public class MainActivity extends AppCompatActivity {
 
         Services.load(IBase33.class).test3();
 
-        serviceLoad();
-        serviceLoad2();
+        serviceLoad(IBase.class);
+        serviceLoad(IBase2.class);
+        serviceLoad(IBase33.class);
     }
 
-    private void serviceLoad(){
-        //加载Fragment 类型的ServiceLoader
-        ServiceLoader<IBase> iterator = ServiceLoader.load(IBase.class);
 
-        for (Iterator<IBase> iterator1 = iterator.iterator(); iterator1.hasNext(); ) {
-            final IBase fragment = iterator1.next();
+    private<T> void serviceLoad(Class<T> cls){
+        //加载Fragment 类型的ServiceLoader
+        ServiceLoader<T> iterator = ServiceLoader.load(cls);
+
+        for (Iterator<T> iterator1 = iterator.iterator(); iterator1.hasNext(); ) {
+            final T fragment = iterator1.next();
 
             //获取ITabPage 注解的类
             BeanImp property = fragment.getClass().getAnnotation(BeanImp.class);
@@ -65,6 +67,24 @@ public class MainActivity extends AppCompatActivity {
 
         for (Iterator<IBase2> iterator1 = iterator.iterator(); iterator1.hasNext(); ) {
             final IBase2 fragment = iterator1.next();
+
+            //获取ITabPage 注解的类
+            BeanImp property = fragment.getClass().getAnnotation(BeanImp.class);
+            if (property == null) {
+                continue;
+            }
+
+            Log.d("SUN", "class = "+fragment.getClass().getName() + "   => BeanImp = "+ property.toString());
+        }
+
+    }
+
+    private void serviceLoad3(){
+        //加载Fragment 类型的ServiceLoader
+        ServiceLoader<IBase33> iterator = ServiceLoader.load(IBase33.class);
+
+        for (Iterator<IBase33> iterator1 = iterator.iterator(); iterator1.hasNext(); ) {
+            final IBase33 fragment = iterator1.next();
 
             //获取ITabPage 注解的类
             BeanImp property = fragment.getClass().getAnnotation(BeanImp.class);

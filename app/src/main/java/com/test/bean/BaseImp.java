@@ -1,9 +1,10 @@
-package com.mindorks.annotation.processing.example;
+package com.test.bean;
 
 import android.util.Log;
 
 import com.google.auto.service.AutoService;
 import com.justsafe.android.core.bean.annotations.BeanImp;
+import com.mindorks.annotation.processing.example.IBase;
 
 /**
  * @author sun
